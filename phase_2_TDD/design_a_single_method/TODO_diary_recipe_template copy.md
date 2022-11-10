@@ -2,11 +2,7 @@
 
 ## 1. Describe the Problem
 
-_Calculate reading time, if user can read 200 words a minute_
-
-_Checking grammar_
-_If text begins with capital letter and ends with sentence-ending punctuation mark_
-
+check if a string includes the word "#TODO"
 
 ## 2. Design the Method Signature
 
@@ -14,15 +10,8 @@ _Include the name of the method, its parameters, return value, and side effects.
 
 *MINE*
 
-def reading_time(text)
-  text
-end
-
-text / 200.ceil # rounds up 
----
-
-def checking_grammar(text)
-  method will return a boolean
+def todo_check(text)
+  text("")
 end
 
 ```ruby
@@ -43,19 +32,12 @@ _Make a list of examples of what the method will take and return._
 
 *MINE*
 
-reading_time(zero) => 0
-reading_time(two_hundred) => 1
-reading_time(five_hundred) => 3
-reading_time(one_thousand) => 5
-reading_time(nil) throws an error
----
+text("") => false
+text("todo") => false
+text("this is my todo") => false
+text("#TODO") => true
+text("this is my #TODO") => true
 
-checking_grammar("") => false
-checking_grammar("This is good") => false
-checking_grammar("This is good.") => true
-checking_grammar("This is good!") => true
-checking_grammar("This is good?") => true
-checking_grammar("this is good.") => false
 
 ```ruby
 # EXAMPLE
