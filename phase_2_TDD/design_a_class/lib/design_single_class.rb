@@ -1,6 +1,6 @@
 class TodoList
   def initialize
-  @tasks = [] 
+    @tasks = [] 
   end
   
   def list
