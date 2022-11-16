@@ -29,7 +29,7 @@ RSpec.describe "integration" do
       track_2 = Track.new("amilli", "lil wayne")
       music_library.add(track_1)
       music_library.add(track_2)
-      result = music_library.search_by_title("title_2")
+      result = music_library.search_by_title("amilli")
       expect(result).to eq [track_2]
     end
 
