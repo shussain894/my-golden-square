@@ -49,6 +49,7 @@ RSpec.describe "Integration" do
 			entry3 = DiaryEntry.new("title3", "7 8 9 10", "07777777777")
 			diary.entry_store(entry1)
 			diary.entry_store(entry2)
+			diary.entry_store(entry3)
 			expect(diary.best_reading_time(3,1)).to eq [entry1, entry2]
 		end
   end 
