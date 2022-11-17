@@ -150,10 +150,12 @@ RSpec.describe "Integration" do
 		it "can retrieve best entry for multiple possible entries" do
 			diary = Diary.new
 			entry1 = DiaryEntry.new("title1", "1 2 3", "07999999999")
-      entry2 = DiaryEntry.new("title2", "4 5 6", "07888888888")
+      		entry2 = DiaryEntry.new("title2", "4 5 6", "07888888888")
 			entry3 = DiaryEntry.new("title3", "7 8 9 10", "07777777777")
 			diary.entry_store(entry1)
 			diary.entry_store(entry2)
+			diary.entry_store(entry3)
+
 			expect(diary.best_reading_time(3,1)).to eq [entry1, entry2]
 		end
 	end
