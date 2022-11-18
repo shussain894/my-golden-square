@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../test_drive_a_single_class"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../design_a_class"
+		},
+		{
+			"path": "../../debugging_2"
+		},
+		{
+			"path": "../../test_drive_multi_class"
+		},
+		{
+			"path": "../../design_multi_class_system"
+		}
+	],
+	"settings": {}
+}
